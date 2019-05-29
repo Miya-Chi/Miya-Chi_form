@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title></title>
+  <meta charset="utf-8">
+  <title>お問い合わせ</title>
 </head>
 <body>
+  <h1>お問い合わせ情報入力</h1>
+  <form method="POST" action="check.php">
+  <div>
+    ニックネーム<br>
+    <input type="text" name="nickname">
+  </div>
+  <div>
+    メールドレス<br>
+    <input type="text" name="email">
+  </div>
+  <div>
+    お問い合わせ<br>
+    <textarea name="content"></textarea>
+  </div>
+  <input type="submit" name="送信">
+
+  </form>
 
 </body>
 </html>

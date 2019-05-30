@@ -1,4 +1,8 @@
-<?php 
+<?php
+    if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        header('Location: index.html');
+    }
+    
     $nickname = $_POST['nickname'];
     $email = $_POST['email'];
     $content = $_POST['content'];
@@ -14,6 +18,6 @@
   <p><?php echo $nickname ?></p>
   <p><?php echo $email ?></p>
   <p><?php echo $content ?></p>
- 
+
  </body>
  </html>
